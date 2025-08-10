@@ -1,0 +1,54 @@
+/* Import Tailwind CSS */
+@import "tailwindcss";
+
+/* Define custom theme colors */
+@theme {
+  --color-green-200: hsl(185, 41%, 84%);
+  --color-green-300: hsl(170, 65%, 75%);
+  --color-green-400: hsl(172, 67%, 45%);
+  --color-green-800: hsl(183, 100%, 15%);
+  --color-grey-50: hsl(189, 47%, 97%);
+  --color-grey-400: hsl(184, 14%, 56%);
+  --color-grey-500: hsl(186, 14%, 43%);
+}
+
+/* Base styles */
+@layer base {
+  /* Set default font for the whole body */
+  body {
+    font-family: "space Mono";
+  }
+
+  /* Style input fields */
+  input {
+    @apply w-full lg:text-lg font-semibold text-green-800 text-right outline-none;
+  }
+}
+
+/* Component styles */
+@layer components {
+  /* Style for Form input container */
+  .form-input {
+    @apply flex items-center justify-between gap-2 w-full mt-1 px-2 py-2 bg-grey-50 rounded-md transition-colors duration-300 ease-in-out focus-within:ring-2 focus-within:ring-green-400;
+  }
+
+  /* Style for rows displaying amount information */
+  .amount-row {
+    @apply flex items-center justify-between;
+  }
+
+  /* Style for primary label */
+  .amount-label {
+    @apply text-sm md:text-base text-white;
+  }
+
+  /* Style for sublabel  */
+  .amount-sublabel {
+    @apply text-xs md:text-sm font-semibold text-grey-400;
+  }
+
+  /* Style for amount values */
+  .amount-value {
+    @apply text-2xl md:text-3xl font-semibold text-green-400;
+  }
+}
