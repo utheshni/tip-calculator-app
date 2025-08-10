@@ -1,6 +1,6 @@
 # 💡 Tip Calculator App
 
-A responsive and user-friendly Tip Calculator App built with React.js and Tailwind CSS. Built as part of a [Frontend Mentor](https://www.frontendmentor.io) challenge to improve my frontend development skills.
+A responsive and user-friendly Tip Calculator App built with React.js and Tailwind CSS. It allows users to quickly calculate the tip amount and the total bill per person, making bill splitting easy and hassle-free. Built as part of a [Frontend Mentor](https://www.frontendmentor.io) challenge to improve my frontend development skills.
 
 ---
 
